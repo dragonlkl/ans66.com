@@ -1,0 +1,13 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@mixin scale($x,$y){
+    -ms-transform:scale($x,$y) ;
+    -moz-transform:scale($x,$y); 
+    -webkit-transform:scale($x,$y); 
+    -o-transform:scale($x,$y); 
+};
+.guang-shu{ left: -1000px;}
+.top{ width: 1000px; position: fixed; top: 10%; z-index: 1; left: 50%;}

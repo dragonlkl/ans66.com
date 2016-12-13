@@ -1,0 +1,17 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@mixin scale($x,$y){
+    -ms-transform:scale($x,$y) ;
+    -moz-transform:scale($x,$y); 
+    -webkit-transform:scale($x,$y); 
+    -o-transform:scale($x,$y); 
+};
+.guang-shu{ opacity: 0;}
+.s2 img.jb {-ms-transform:translateY(0); -webkit-transform:translateY(0);transform:translateY(0);}
+.s2 .txt,.s3 .txt,.s4 .txt,.s5 .txt{-ms-transform:translateY(0); -webkit-transform:translateY(0);transform:translateY(0);}
+.s3 .six{@include scale(1,1);}
+.s4 img.bg{ @include scale(1,1);}
+.s5 img.title{ @include scale(1,1);}
